@@ -2,26 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  --line-color: #e5e7eb;
+}
+.dark {
+  /* --line-color: rgba(255, 255, 255, 0.15); */
+  --line-color: rgba(60, 2, 176, 0.4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* ------------------- NAVBAR --------------------- */
+.navigation {
+  @apply border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] text-gray-500 backdrop-blur-md;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.menu-item {
+  @apply px-4 py-2 transition rounded-full text-gray-500 border border-transparent hover:text-gray-950;
+}
+
+.menu-item-active {
+  @apply text-gray-950 border-[#c7c7c761] bg-[#d5d5d5b2] backdrop-blur-md;
+}
+
+.heading-text {
+  @apply bg-gradient-to-r text-transparent bg-clip-text from-[#345cc2d2] to-[#7c0087];
+}
+
+.inputStyle {
+  @apply bg-white border border-gray-300 rounded-lg px-2 py-3 outline-none focus:border-gray-800;
+}
+
+.btn {
+  @apply flex items-center border justify-center shadow-lg backdrop-blur-md gap-2 rounded-full outline-none transition cursor-pointer active:scale-105 focus:scale-110 hover:scale-110 h-14 w-[12rem] disabled:scale-100 disabled:bg-opacity-65;
+}
+
+.btn-primary {
+  @apply bg-gray-900 hover:bg-gray-950 text-white;
+}
+
+.btn-secondary {
+  @apply bg-white text-black;
+}
+.btn-animation {
+  @apply opacity-70 group-hover:translate-x-1 transition;
+}
+
+.btnIcon {
+  @apply bg-white p-4 border text-gray-700 hover:text-gray-950 h-[initial] w-[initial];
+}
+
+/* ------------------- Projects --------------------- */
+.grp-block {
+  @apply bg-gray-100 border-black/5 hover:bg-gray-200;
+}
+.grp-block__item {
+  @apply bg-black/[0.7] text-white border border-transparent;
+}
+
+.tag_item {
+  @apply bg-white/10 border border-black/[0.15];
+}
+
+/* Dark styles */
+.dark .navigation {
+  @apply border-[rgba(112,66,248,0.24)] bg-[rgba(3,0,20,0.47)] shadow-[#2A0E61]/50 text-gray-400 hover:text-gray-100;
+}
+.dark .menu-item {
+  @apply text-gray-400 hover:text-gray-100;
+}
+
+.dark .menu-item-active {
+  @apply border-[#7042f88b] shadow-inner text-gray-100 shadow-black/[0.04] bg-[transparent];
+}
+
+.dark .heading-text {
+  @apply from-purple-500 to-cyan-500;
+}
+
+.dark .btn-primary {
+  @apply bg-[#351476] shadow-[#000]/30 text-white border-[#1d0b40];
+}
+
+.dark .btn-secondary,
+.dark .btnIcon {
+  @apply bg-[transparent] border-[#7042f88b] shadow-[#2A0E61]/50 text-white;
+}
+
+.dark .grp-block,
+.dark .grp-block__item {
+  @apply border-white/[0.2] bg-white/[0.04] hover:bg-white/[0.15] shadow-[#2A0E61]/50 text-white;
+}
+.dark .tag_item {
+  @apply bg-white/[0.06] border-[#703cd76f] text-white/80;
+}
+
+.dark .inputStyle {
+  @apply bg-white/[0.06] border-white/[0.04] focus:border-white/10 text-white;
 }
