@@ -23,8 +23,8 @@ This is my personal portfolio website, built using modern web technologies to sh
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
+   git clone https://github.com/NhuTran88/porfolio.git
+   cd portfolio
    ```
 
 2. Install dependencies:
