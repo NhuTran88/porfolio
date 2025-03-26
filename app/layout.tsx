@@ -10,10 +10,28 @@ const charm = Charm({
   variable: "--font-charm",
 });
 
+// write metta data with og image
 export const metadata = {
-  title: "Nhu Tran | Portfolio",
-  description: "Nhu Tran is a frontend developer with 10 years experience.",
+  title: "Nhu Tran | Frontend Developer Portfolio",
+  description:
+    "Explore the work of Nhu Tran, a highly skilled frontend developer with over 10 years of experience in building modern, high-performance web applications.",
   icons: [{ rel: "icon", url: favicon.src }],
+  author: "Nhu Tran",
+  openGraph: {
+    title: "Nhu Tran | Frontend Developer Portfolio",
+    description:
+      "Explore the work of Nhu Tran, a highly skilled frontend developer with over 10 years of experience in building modern, high-performance web applications.",
+    url: "https://nhu-tran-porfolio.vercel.app/",
+    type: "website",
+    images: [
+      {
+        url: "/public/porfolio.png", // Adjusted to a valid path (public folder is automatically served in Next.js)
+        width: 1200,
+        height: 630,
+        alt: "Nhu Tran Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
