@@ -8,7 +8,7 @@ import Experiences from "@/app/components/Experiences";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center relative z-[22]">
       <Intro />
       <SectionDivider />
       <About />

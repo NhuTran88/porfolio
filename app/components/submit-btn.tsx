@@ -5,7 +5,11 @@ import { useFormStatus } from "react-dom";
 export default function SubmitBtn() {
   const { pending } = useFormStatus();
   return (
-    <button type="submit" className="group btn btn-primary" disabled={pending}>
+    <button
+      type="submit"
+      className="group btn btn-primary font-charm text-lg"
+      disabled={pending}
+    >
       {pending ? (
         <>
           Sending...{" "}

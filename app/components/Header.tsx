@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext, useState } from "react";
+import React from "react";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -15,9 +15,10 @@ export const outfit = Outfit({
 export default function Header() {
   const { activeSection, setActiveSection, setLastOfClick } =
     useActiveSectionContext();
+
   return (
     <header
-      className={`${outfit.className} z-[999] fixed top-[1.7rem] left-0 bottom-0 right-0 with-full h-14`}
+      className={`${outfit.className} z-[999] fixed top-[1.7rem] left-0 bottom-0 right-0 with-full h-28 md:h-14`}
     >
       {/* <motion.div
         className=" rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
@@ -30,7 +31,7 @@ export default function Header() {
         animate={{ y: 0, opacity: 1 }}
       >
         <nav className="">
-          <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium sm:w-[initial] sm:flex-nowrap sm:gap-5">
+          <ul className="flex flex-wrap items-center justify-center gap-y-1 font-medium sm:w-[initial] sm:flex-nowrap sm:gap-5">
             {links.map((link) => (
               <motion.li
                 key={link.hash}

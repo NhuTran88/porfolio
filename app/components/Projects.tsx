@@ -8,7 +8,7 @@ import { useSectionInView } from "@lib/hook";
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.25);
   return (
-    <section id="projects" ref={ref} className="scroll-mt-28 mb-28 px-8">
+    <section id="projects" ref={ref} className="scroll-mt-28 mb-28 px-4">
       <SectionHeading>My Projects</SectionHeading>
       {projectsData.map((project, index) => (
         <React.Fragment key={index}>

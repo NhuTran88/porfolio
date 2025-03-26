@@ -44,14 +44,14 @@ export default function Intro() {
         </motion.div>
         <div className="px-8 pt-4">
           <motion.p
-            className="text-lg block mb-4"
+            className="text-xl block mb-4 font-charm"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}
           >
             Hello, I&#39;m{" "}
           </motion.p>
-          <h1 className="text-2xl mb-4 heading-text ">
+          <h1 className="text-3xl lg:text-4xl mb-4 heading-text font-charm">
             <TypeAnimation
               sequence={[
                 "Nhu Tran",
@@ -71,7 +71,7 @@ export default function Intro() {
             />
           </h1>
           <motion.div
-            className="text-base mx-auto lg:w-1/2 sm:text-2xl lg:text-lg font-normal !leading-[1.5] mb-8"
+            className="text-base mx-auto font-normal !leading-[1.5] mb-8"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}
@@ -79,11 +79,13 @@ export default function Intro() {
             <p>
               I enjoy building&nbsp;
               <span className="font-bold italic">sites and apps</span>
-              &nbsp;focusing on&nbsp;
+              &nbsp;with&nbsp;
               <span className="font-bold underline">
                 modern JavaScript frameworks.
               </span>
-              &nbsp;work with passion and learning new things to improve myself
+              &nbsp;driven by a passion for creating seamless user experiences.
+              Constantly learning and evolving, I strive to refine my skills and
+              adapt to the ever-changing world of web development.
             </p>
           </motion.div>
         </div>
@@ -98,7 +100,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group btn btn-primary"
+          className="group btn btn-primary font-charm text-lg"
           onClick={() => {
             setLastOfClick(Date.now());
             handleClick("Contact");
@@ -106,9 +108,14 @@ export default function Intro() {
         >
           Contact me <BsArrowRight className="btn-animation" />
         </Link>
-        <Link className="group btn btn-secondary" href="/CV.pdf" download>
+        <a
+          className="group btn btn-secondary font-charm text-lg"
+          href="/CV.pdf"
+          target="_blank"
+          download="CV.pdf"
+        >
           Download CV <HiDownload className="btn-animation" />
-        </Link>
+        </a>
         <Link
           className="btn btnIcon"
           href="https://www.linkedin.com/in/nhu-tran-26930893/"
@@ -117,7 +124,11 @@ export default function Intro() {
           <BsLinkedin />
         </Link>
 
-        <Link className="btn btnIcon" href="https://github.com" target="_blank">
+        <Link
+          className="btn btnIcon"
+          href="https://github.com/NhuTran88"
+          target="_blank"
+        >
           <FaGithubSquare />
         </Link>
       </motion.div>

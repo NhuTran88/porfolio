@@ -16,7 +16,7 @@ html {
 }
 
 .menu-item {
-  @apply px-4 py-2 transition rounded-full text-gray-500 border border-transparent hover:text-gray-950;
+  @apply px-4 py-2 font-charm text-lg transition rounded-full text-gray-500 border border-transparent hover:text-gray-950;
 }
 
 .menu-item-active {
@@ -28,7 +28,7 @@ html {
 }
 
 .inputStyle {
-  @apply bg-white border border-gray-300 rounded-lg px-2 py-3 outline-none focus:border-gray-800;
+  @apply bg-white border border-gray-300 rounded-lg px-2 py-3 outline-none focus:border-gray-800 font-charm;
 }
 
 .btn {
