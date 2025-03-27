@@ -107,7 +107,16 @@ export const projectsData = [
     title: "Tend",
     description:
       "Developed key front-end features for a farm management platform. Integrated interactive maps, calendar scheduling, dynamic charts, and a subscription-based payment system to enhance user experience.",
-    tags: ["AngularJS", "Git", "Jenkins", "Bitbucket", "Bootstrap", "LESS"],
+    tags: [
+      "AngularJS",
+      "GIT",
+      "Jenkins",
+      "JS",
+      "Bootstrap",
+      "LESSCSS",
+      "OAuth",
+      "D3JS",
+    ],
     imageUrl: TendImg,
   },
   {
@@ -128,8 +137,8 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
   "JavaScript",
   "TypeScript",
   "jQuery",
@@ -138,14 +147,21 @@ export const skillsData = [
   "AngularJS",
   "ExtJS",
   "RESTful",
+  "Prisma",
+  "PostgreSQL",
+  "SQL",
   "GIT",
   "SVN",
+  "NPM",
+  "Babel",
+  "Webpack",
+  "Vite",
   "Tailwind",
   "Bootstrap",
   "Material UI",
+  "ShadcnUI",
   "SASS/LESS",
   "Jenkin",
   "Jira",
-  "Figma",
-  "Zeplin",
+  "Figma"
 ] as const;

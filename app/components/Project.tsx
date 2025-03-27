@@ -25,7 +25,7 @@ export default function Project({
       ref={ref}
       style={{ scale: scaleProgess, opacity: opacityProgess }}
     >
-      <section className="max-w-[50rem] border rounded-lg overflow-hidden sm:px-8 relative sm:h-[21rem] transition grp-block">
+      <section className="max-w-[50rem] border rounded-lg overflow-hidden sm:px-8 relative transition grp-block">
         <div className="pt-4 pb-7 px-5 sm:group-even:pl-10 sm:group-odd:pr-10 sm:px-2 sm:pt-10 flex flex-col h-full sm:group-even:ml-[17rem] sm:group-odd:mr-[17rem]">
           <h3 className="text-2xl font-semibold font-charm">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-200">
@@ -48,7 +48,7 @@ export default function Project({
           quality={95}
           height={300}
           width={400}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-auto rounded-t-lg shadow-2xl
+          className="absolute hidden sm:block top-9 -right-40 w-[28.25rem] h-auto rounded-t-lg shadow-2xl
       transition 
       group-hover:scale-[1.04]
       group-hover:-translate-x-3

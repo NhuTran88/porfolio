@@ -110,9 +110,9 @@ export default function Intro() {
         </Link>
         <a
           className="group btn btn-secondary font-charm text-lg"
-          href="/CV.pdf"
+          href="/my-cv.pdf"
           target="_blank"
-          download="CV.pdf"
+          download="NhuTran-FrontendDev-CV.pdf"
         >
           Download CV <HiDownload className="btn-animation" />
         </a>
