@@ -25,7 +25,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/public/porfolio.png", // Adjusted to a valid path (public folder is automatically served in Next.js)
+        url: "graphImage.png",
         width: 1200,
         height: 630,
         alt: "Nhu Tran Portfolio",
