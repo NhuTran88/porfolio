@@ -110,7 +110,7 @@ export default function Intro() {
         </Link>
         <a
           className="group btn btn-secondary font-charm text-lg"
-          href="/NhuTran_CV.pdf"
+          href="/NhuTran-FrontendDev-CV.pdf"
           target="_blank"
           download="NhuTran-FrontendDev-CV.pdf"
         >
