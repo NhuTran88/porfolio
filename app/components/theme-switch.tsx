@@ -6,7 +6,7 @@ import { useMountedTheme } from "@lib/hook";
 type Theme = "light" | "dark";
 
 export default function ThemeSwitch() {
-  const { currentTheme, setTheme, mounted } = useMountedTheme();
+  const { currentTheme, mounted, setTheme } = useMountedTheme();
 
   // Ensure we do not render until the component is mounted to avoid hydration issues
   if (!mounted) return null;

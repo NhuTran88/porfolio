@@ -18,23 +18,22 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 export function useMountedTheme() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState<Theme>("dark");
+  const [currentTheme, setCurrentTheme] = useState<Theme | undefined>("dark");
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   useEffect(() => {
-    if (!mounted) return;
     if (theme === "system") {
       const prefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
       setCurrentTheme(prefersDark ? "dark" : "light");
-    } else {
+    } else if (theme) {
       setCurrentTheme(theme as Theme);
     }
-  }, [theme, mounted]);
+  }, [theme]);
 
   return { currentTheme, setTheme, mounted };
 }

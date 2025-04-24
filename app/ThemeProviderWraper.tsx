@@ -15,6 +15,7 @@ export default function ThemeProviderWraper({
   children: React.ReactNode;
 }) {
   const { currentTheme, mounted } = useMountedTheme();
+  console.log("Mounted:", mounted, "Current Theme:", currentTheme);
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
       <ActiveSectionContextProvider>
